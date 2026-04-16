@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="page-container">
+        <div class="card">
+            <h2>Dashboard</h2>
+            <p class="subtitle">Bem-vindo, <strong>{{ usuario }}</strong></p>
+            <p>Área protegida apenas para usuários autenticados.</p>
+            <a class="button-danger" href="/logout">Sair</a>
+        </div>
+    </div>
+</body>
+</html>
